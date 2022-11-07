@@ -1,0 +1,40 @@
+baseURL: ""
+languageCode: en-us
+title: Akvus World
+theme: LoveIt
+
+params:
+  defaultTheme: auto
+  gitRepo: 'https://github.com/dillonzq/LoveIt'
+  fingerprint: ''
+  dateFormat: '2006-01-02'
+  title: AkvusWorld
+  description: Personal portfolio
+  images:
+    - /logo.png
+  header:
+    desktopMode: fixed
+    mobileMode: auto
+    title:
+      logo: ''
+      name: Akvus World
+  home:
+    rss: 10
+    profile:
+      enable: true
+      gravatarEmail: ''
+      avatarURL: /images/avatar.jpg
+      title: ''
+      subtitle: 'Welcome to Akvus World!'
+      typeit: true
+      social: true
+      disclaimer: ''
+    posts:
+      enable: true
+  social:
+    github: akvus
+    linkedin: maczaw
+    Twitter: akvus
+    instagram: maciejrazy3
+    Youtubechannel: UCz0IhLYLaiaZ7D9_U301S9Q
+
