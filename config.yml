@@ -1,6 +1,6 @@
 baseURL: "https://akvus.github.io"
 languageCode: en-us
-title: Akvus World
+title: ZawiejaMobile - Maciej Zawieja
 theme: LoveIt
 
 params:
@@ -8,8 +8,8 @@ params:
   gitRepo: 'https://github.com/dillonzq/LoveIt'
   fingerprint: ''
   dateFormat: '2006-01-02'
-  title: AkvusWorld
-  description: Personal portfolio
+  title: ZawiejaMobile
+  description:
   images:
     - /logo.png
   header:
@@ -24,8 +24,8 @@ params:
       enable: true
       gravatarEmail: ''
       avatarURL: /images/avatar.jpg
-      title: ''
-      subtitle: 'Welcome to Akvus World!'
+      title: 'Freelancing services'
+      subtitle: 'Professional App and Back End Services!'
       typeit: true
       social: true
       disclaimer: ''
@@ -35,6 +35,5 @@ params:
     github: akvus
     linkedin: maczaw
     Twitter: akvus
-    instagram: maciejrazy3
     Youtubechannel: UCz0IhLYLaiaZ7D9_U301S9Q
 
