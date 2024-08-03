@@ -9,7 +9,7 @@
     <title>Portfolio</title>
     <link>http://localhost:1313/posts/projects/</link>
     <pubDate>Sun, 06 Nov 2022 22:34:24 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Maciej Zawieja</author>
     <guid>http://localhost:1313/posts/projects/</guid>
     <description><![CDATA[Recent projects portfolio ApoPortal ApoGuide Kitchen Stories MySkills MediaMarktSaturn ]]></description>
 </item>
@@ -17,7 +17,7 @@
     <title>Provided services</title>
     <link>http://localhost:1313/posts/services/</link>
     <pubDate>Sun, 06 Nov 2022 22:34:24 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Maciej Zawieja</author>
     <guid>http://localhost:1313/posts/services/</guid>
     <description><![CDATA[Provided Services Spring Back End Development Mobile Development Flutter Native Android % iOS ]]></description>
 </item>

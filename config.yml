@@ -2,6 +2,8 @@ baseURL: "https://akvus.github.io"
 languageCode: en-us
 title: ZawiejaMobile - Maciej Zawieja
 theme: LoveIt
+author: 
+  name: "Maciej Zawieja"
 
 params:
   defaultTheme: auto
@@ -17,7 +19,7 @@ params:
     mobileMode: auto
     title:
       logo: ''
-      name: Akvus World
+      name: ZawiejaMobile - Software Freelance
   home:
     rss: 10
     profile:
