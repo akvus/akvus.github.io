@@ -12,4 +12,4 @@ draft: false
 
 ### Flutter
 
-### Native Android % iOS
+### Native Android + iOS
