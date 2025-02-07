@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ZawiejaMobile - Maciej Zawieja</title><link>https://akvus.github.io/</link><description>ZawiejaMobile - Maciej Zawieja</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Nov 2022 22:34:24 +0100</lastBuildDate><atom:link href="https://akvus.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Portfolio</title><link>https://akvus.github.io/posts/projects/</link><pubDate>Sun, 06 Nov 2022 22:34:24 +0100</pubDate><author>Maciej Zawieja</author><guid>https://akvus.github.io/posts/projects/</guid><description><![CDATA[<h1 id="apps-portfolio">Apps Portfolio</h1>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ZawiejaMobile - Maciej Zawieja</title><link>https://akvus.github.io/</link><description>ZawiejaMobile - Maciej Zawieja</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Nov 2022 22:34:24 +0100</lastBuildDate><atom:link href="https://akvus.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Portfolio</title><link>https://akvus.github.io/posts/projects/</link><pubDate>Sun, 06 Nov 2022 22:34:24 +0100</pubDate><author>Author</author><guid>https://akvus.github.io/posts/projects/</guid><description><![CDATA[<h1 id="apps-portfolio">Apps Portfolio</h1>
 <h2 id="apoportal">ApoPortal</h2>
 <h2 id="apoguide">ApoGuide</h2>
 <h2 id="kitchen-stories">Kitchen Stories</h2>
@@ -8,7 +8,7 @@
 <h2 id="tds-ltd">TDS Ltd.</h2>
 <h2 id="mobica-ltd">Mobica Ltd.</h2>
 <h2 id="geenpage">Geenpage</h2>
-<h2 id="mobilebox">MobileBox</h2>]]></description></item><item><title>Provided services</title><link>https://akvus.github.io/posts/services/</link><pubDate>Sun, 06 Nov 2022 22:34:24 +0100</pubDate><author>Maciej Zawieja</author><guid>https://akvus.github.io/posts/services/</guid><description><![CDATA[<h1 id="provided-services">Provided Services</h1>
+<h2 id="mobilebox">MobileBox</h2>]]></description></item><item><title>Provided services</title><link>https://akvus.github.io/posts/services/</link><pubDate>Sun, 06 Nov 2022 22:34:24 +0100</pubDate><author>Author</author><guid>https://akvus.github.io/posts/services/</guid><description><![CDATA[<h1 id="provided-services">Provided Services</h1>
 <h2 id="spring-back-end-development">Spring Back End Development</h2>
 <h2 id="mobile-development">Mobile Development</h2>
 <h3 id="flutter">Flutter</h3>
