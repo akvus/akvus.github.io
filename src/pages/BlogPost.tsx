@@ -38,6 +38,7 @@ const BlogPost = () => {
       
       <div className="max-w-3xl mx-auto">
         <AnimatedImage
+        
           src={post.coverImage}
           alt={post.title}
           className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
@@ -63,9 +64,22 @@ const BlogPost = () => {
         
         <h1 className="text-3xl md:text-4xl font-bold mb-6">{post.title}</h1>
         
-        <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-        </div>
+        <article className="prose prose-sm sm:prose lg:prose-lg dark:prose-invert prose-headings:font-bold max-w-full break-words">
+          <div className="break-words">
+            <ReactMarkdown
+              components={{
+                a: (props) => (
+                  <a {...props} className="break-words" style={{ wordBreak: 'break-word' }} />
+                ),
+                code: (props) => (
+                  <code {...props} className="break-words" style={{ wordBreak: 'break-word' }} />
+                )
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
+          </div>
+        </article>
       </div>
     </div>
   );
