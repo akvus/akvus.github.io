@@ -39,17 +39,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-medium">Email</h4>
-                <p className="text-muted-foreground">hello@example.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start">
-              <div className="mr-4 bg-primary/10 p-3 rounded-full">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-medium">Phone</h4>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground">zawieja.mobile@gmail.com</p>
               </div>
             </div>
             
@@ -59,13 +49,13 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-medium">Location</h4>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground">Munich, Germany</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div>
+        <div className="hidden md:block" style={{ display: false ? 'block' : 'none' }}>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">

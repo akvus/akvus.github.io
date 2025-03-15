@@ -44,10 +44,10 @@ const Footer = () => {
             <h3 className="text-sm font-semibold mb-3">Connect</h3>
             <div className="flex space-x-4 mt-4">
               {[
-                { icon: <Github size={20} />, href: 'https://github.com' },
-                { icon: <Twitter size={20} />, href: 'https://twitter.com' },
-                { icon: <Linkedin size={20} />, href: 'https://linkedin.com' },
-                { icon: <Mail size={20} />, href: 'mailto:hello@example.com' },
+                { icon: <Github size={20} />, href: 'https://github.com/akvus' },
+                { icon: <Twitter size={20} />, href: 'https://x.com/akvus' },
+                { icon: <Linkedin size={20} />, href: 'https://linkedin.com/maczaw/' },
+                { icon: <Mail size={20} />, href: 'mailto:zawieja.mobile@gmail.com' },
               ].map((item, index) => (
                 <a 
                   key={index} 

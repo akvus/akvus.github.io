@@ -52,10 +52,6 @@ const Videos = () => {
                     <Film className="h-5 w-5 text-primary mr-2" />
                     <span className="text-xs font-medium uppercase text-primary">{video.categories[0]}</span>
                   </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-4 w-4 text-muted-foreground mr-1" />
-                    <span className="text-xs text-muted-foreground">{video.publishDate}</span>
-                  </div>
                 </div>
                 <h3 className="text-xl font-bold mb-2">{video.title}</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-3">{video.description}</p>
@@ -90,10 +86,6 @@ const Videos = () => {
                       <div className="flex items-center">
                         <Film className="h-5 w-5 text-primary mr-2" />
                         <span className="text-xs font-medium uppercase text-primary">{video.categories[0]}</span>
-                      </div>
-                      <div className="flex items-center">
-                        <Calendar className="h-4 w-4 text-muted-foreground mr-1" />
-                        <span className="text-xs text-muted-foreground">{video.publishDate}</span>
                       </div>
                     </div>
                     <h3 className="text-xl font-bold mb-2">{video.title}</h3>
