@@ -14,27 +14,26 @@ export interface AppData {
 
 export const appsData: AppData[] = [
   {
-    id: "fitness-tracker",
-    title: "FitTrack Pro",
-    description: "A comprehensive fitness tracking app that helps users monitor their workouts, nutrition, and progress towards their fitness goals. With an intuitive interface and powerful analytics, FitTrack Pro makes it easy to stay on track and achieve results.",
+    id: "apo-guide",
+    title: "ApoGuide",
+    description: "ApoGuide – direct contact with your favorite pharmacy! Send prescriptions, order medications, and receive medical advice via the app from your local pharmacy. With the ApoGuide app, you're connected to your local pharmacy around the clock. Save yourself the hassle of double-traveling and unnecessary wait times – try it now. In addition to the convenient pharmacy search, the app offers the option of sending e-prescriptions from your electronic health card or booking appointments at your pharmacy. With the online shop function, you can order over-the-counter medications from your pharmacy at any time. The highly secure chat function enables you to communicate quickly and securely with your local pharmacy – whether you have questions about medication availability or dosage instructions, your pharmacy is always there for you, even on your mobile. The ApoGuide app is the digital branch of your local pharmacy. See for yourself!",
     features: [
-      "Personalized workout plans",
-      "Real-time exercise tracking",
-      "Nutrition diary with macro calculations",
-      "Progress photos and measurements",
-      "Goal setting and achievement tracking",
-      "Community challenges and support"
+      "Find a pharmacy",
+      "Chat with a pharmacy",
+      "Order medication with prescription",
+      "Use your health insurance card",
+      "Plan your medication intake",
     ],
-    category: "Health & Fitness",
+    category: "Health",
     screenshots: [
       "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&auto=format&fit=crop"
     ],
-    technologies: ["React Native", "TypeScript", "Firebase", "TensorFlow Lite"],
-    appStoreUrl: "https://apps.apple.com",
-    playStoreUrl: "https://play.google.com",
-    websiteUrl: "https://example.com/fittrackpro"
+    technologies: ["Flutter", "Dart", "Firebase", "Android", "iOS"],
+    appStoreUrl: "https://apps.apple.com/de/app/apoguide-de/id6447188653",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=de.gedisa.apo_guide&hl=gsw",
+    websiteUrl: "https://www.apoguide.de/"
   },
   {
     id: "recipe-finder",
