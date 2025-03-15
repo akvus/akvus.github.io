@@ -26,9 +26,9 @@ export const appsData: AppData[] = [
     ],
     category: "Health",
     screenshots: [
-      "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&auto=format&fit=crop"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/94/fb/2d94fb5e-f060-9b10-b3d7-33d2290a9ced/IOS-6-5-Shop_1.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/1c/50/a11c501b-cd85-b66d-e97d-e2a0429270cb/IOS-6-5-Shop_2.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/cf/ea/0bcfea9b-3240-da18-7ad1-f111affc5838/IOS-6-5-Shop_3.png/600x0w.webp"
     ],
     technologies: ["Flutter", "Dart", "Firebase", "Android", "iOS"],
     appStoreUrl: "https://apps.apple.com/de/app/apoguide-de/id6447188653",
@@ -50,9 +50,9 @@ export const appsData: AppData[] = [
     ],
     category: "Health",
     screenshots: [
-      "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&auto=format&fit=crop"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/8f/6d/d8/8f6dd800-7a54-80ca-d43a-ef304390047b/759fb981-cd45-4dcd-a9ce-9fce61c7d5d5_IOS-6-5-Shop_1.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/76/1b/92/761b921d-df75-dae5-9791-5a35f3c2891a/47e55cfb-c7f7-48ad-b325-f228e93d95d9_IOS-6-5-Shop_2.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/da/df/c3/dadfc33d-63ce-8fea-79a1-2b348a9f7138/7cd52a31-2b02-48e5-9987-7e37e88233d1_IOS-6-5-Shop_5.png/600x0w.webp"
     ],
     technologies: ["Flutter", "Dart", "Firebase", "Two-Factor Authentication", "End-to-End Encryption"],
     appStoreUrl: "https://apps.apple.com/de/app/apoportal/id1510751097",
@@ -75,9 +75,9 @@ export const appsData: AppData[] = [
     ],
     category: "Food & Drink",
     screenshots: [
-      "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&auto=format&fit=crop"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/e0/8d/f4e08d05-0e10-88a2-1c63-28cf9633e481/1.png/1286x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/61/c6/b561c68a-0d44-dd5a-90a8-9f017eb736a2/2.png/1286x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/89/34/4a8934e3-83dc-107a-3861-3786634592dd/3.png/1286x0w.webp"
     ],
     technologies: ["React Native", "JavaScript", "AWS", "Content Delivery Networks", "Video Streaming"],
     appStoreUrl: "https://apps.apple.com/app/kitchen-stories-recipes/id771068291",
@@ -100,9 +100,9 @@ export const appsData: AppData[] = [
     ],
     category: "Shopping",
     screenshots: [
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=800&auto=format&fit=crop"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/1f/b8/d21fb8e8-5a8b-f9fd-1b7e-42c3b718702d/catalogue_39.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/5f/58/d75f5875-6448-e9b9-65e9-689f52e2f39b/catalogue_40.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/23/59/8b/23598be3-258d-4af7-73fb-3d6bd9dd0940/coupons__U00283_U0029.png/600x0w.webp"
     ],
     technologies: ["React Native", "Redux", "Node.js", "RESTful APIs", "Payment Gateway Integration"],
     appStoreUrl: "https://apps.apple.com/de/app/mediamarkt-deutschland/id386304604",
@@ -126,9 +126,9 @@ export const appsData: AppData[] = [
     ],
     category: "Shopping",
     screenshots: [
-      "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1601972602237-8c79241e781b?w=800&auto=format&fit=crop"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e3/d5/d5/e3d5d5c3-f8d2-c631-fc8d-fe480b96c56d/16999020-93fc-4fe3-ae18-d975417abd14_1.1_SEDE_ios_xs_max.jpg/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/90/fb/4a90fb5e-e347-17fa-f42b-7b96a47521d5/476981cc-fcc1-4e54-bc94-442141431cdf_1.2_SEDE_ios_xs_max.jpg/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/3e/9c/ae3e9c37-a8b1-d8bd-9937-a18dc56e401c/dfee1ea7-8209-48d9-99fc-0d679becd901_1.3_SEDE_ios_xs_max.jpg/600x0w.webp"
     ],
     technologies: ["React Native", "Redux", "Node.js", "RESTful APIs", "Biometric Authentication"],
     appStoreUrl: "https://apps.apple.com/de/app/saturn-deutschland/id557562682",
