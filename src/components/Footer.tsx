@@ -65,7 +65,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-white/10 text-center">
           <p className="text-sm text-muted-foreground">
-            © {year} Portfolio. All rights reserved.
+            © {year} Maciej Zawieja Portfolio. All rights reserved.
           </p>
         </div>
       </div>

@@ -53,13 +53,13 @@ const Index = () => {
         >
           <div className="max-w-3xl animate-fade-in">
             <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-white uppercase bg-primary/30 backdrop-blur-sm rounded-full">
-              Designer & Developer
+              Lead Software Engineering Expert
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Creating digital experiences that make a difference
             </h1>
             <p className="text-xl text-white/80 mb-8 max-w-xl">
-              Specialized in mobile app development, engaging video content, and insightful articles
+              Specialized in mobile app development, back end development, engaging video content, and insightful articles
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">

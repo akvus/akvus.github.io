@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <NavLink to="/" className="text-xl font-bold tracking-tight">
-              <span className="text-primary">Port</span>folio
+              <span className="text-primary">Maciej Zawieja</span> Portfolio
             </NavLink>
           </div>
 
