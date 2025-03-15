@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -23,7 +22,9 @@ const Navbar = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-lg',
-        isScrolled ? 'bg-white/10 border-b border-white/10 shadow-sm' : 'bg-transparent'
+        isScrolled 
+          ? 'bg-white/15 border-b border-white/10 shadow-sm' 
+          : 'bg-white/5 backdrop-blur-md'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,10 +68,19 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          'md:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-lg transform transition-transform ease-in-out duration-300',
+          'md:hidden fixed inset-0 z-40 bg-background transform transition-transform ease-in-out duration-300',
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
+        {/* Close button inside the expanded menu for better accessibility */}
+        <button
+          className="absolute top-4 right-4 p-2 rounded-md text-primary hover:bg-gray-800 transition-colors z-50"
+          onClick={toggleMenu}
+        >
+          <X size={24} />
+          <span className="sr-only">Close menu</span>
+        </button>
+        
         <div className="pt-20 pb-4 px-4 space-y-1">
           {['Home', 'Apps', 'Videos', 'Blog', 'Contact'].map((item) => (
             <NavLink
@@ -78,7 +88,9 @@ const Navbar = () => {
               to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
               className={({ isActive }) => cn(
                 'block px-3 py-4 text-base font-medium rounded-md transition-colors',
-                isActive ? 'text-primary' : 'text-foreground/80 hover:bg-white/5'
+                isActive 
+                  ? 'text-primary bg-gray-800 shadow-sm' 
+                  : 'text-white bg-gray-900 hover:bg-gray-800 hover:text-primary'
               )}
               onClick={() => setIsMenuOpen(false)}
             >
