@@ -1,10 +1,10 @@
-
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Calendar, Tag, ArrowLeft } from 'lucide-react';
 import { blogData } from '@/data/blog';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from '@/components/AnimatedImage';
+import ReactMarkdown from 'react-markdown';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -46,7 +46,7 @@ const BlogPost = () => {
         <div className="flex items-center mb-6 gap-4">
           <div className="flex items-center">
             <Calendar className="h-4 w-4 text-muted-foreground mr-2" />
-            <span className="text-sm text-muted-foreground">{post.publishDate}</span>
+            <span className="text-sm text-muted-foreground">{post.publishedAt}</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {post.categories.map(category => (
@@ -64,11 +64,7 @@ const BlogPost = () => {
         <h1 className="text-3xl md:text-4xl font-bold mb-6">{post.title}</h1>
         
         <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
-          {post.content.split('\n\n').map((paragraph, index) => (
-            <p key={index} className="mb-4 text-muted-foreground">
-              {paragraph}
-            </p>
-          ))}
+          <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
       </div>
     </div>
