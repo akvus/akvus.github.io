@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
-import { ExternalLink, Smartphone } from 'lucide-react';
+import { ExternalLink, Smartphone, Info } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SectionHeading from '@/components/SectionHeading';
 import { Button } from '@/components/ui/button';
 import { appsData } from '@/data/apps';
@@ -50,16 +50,21 @@ const Apps = () => {
                 <h3 className="text-xl font-bold mb-2">{app.title}</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-3">{app.description}</p>
                 <div className="flex space-x-3">
-                  {app.appStore && (
+                  <Button asChild variant="outline" size="sm" className="flex-1">
+                    <Link to={`/apps/${app.id}`}>
+                      Details <Info className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  {app.appStoreUrl && (
                     <Button asChild variant="outline" size="sm" className="flex-1">
-                      <a href={app.appStore} target="_blank" rel="noopener noreferrer">
+                      <a href={app.appStoreUrl} target="_blank" rel="noopener noreferrer">
                         App Store <ExternalLink className="ml-1 h-4 w-4" />
                       </a>
                     </Button>
                   )}
-                  {app.googlePlay && (
+                  {app.playStoreUrl && (
                     <Button asChild variant="outline" size="sm" className="flex-1">
-                      <a href={app.googlePlay} target="_blank" rel="noopener noreferrer">
+                      <a href={app.playStoreUrl} target="_blank" rel="noopener noreferrer">
                         Google Play <ExternalLink className="ml-1 h-4 w-4" />
                       </a>
                     </Button>
@@ -92,16 +97,21 @@ const Apps = () => {
                     <h3 className="text-xl font-bold mb-2">{app.title}</h3>
                     <p className="text-muted-foreground mb-4 line-clamp-3">{app.description}</p>
                     <div className="flex space-x-3">
-                      {app.appStore && (
+                      <Button asChild variant="outline" size="sm" className="flex-1">
+                        <Link to={`/apps/${app.id}`}>
+                          Details <Info className="ml-1 h-4 w-4" />
+                        </Link>
+                      </Button>
+                      {app.appStoreUrl && (
                         <Button asChild variant="outline" size="sm" className="flex-1">
-                          <a href={app.appStore} target="_blank" rel="noopener noreferrer">
+                          <a href={app.appStoreUrl} target="_blank" rel="noopener noreferrer">
                             App Store <ExternalLink className="ml-1 h-4 w-4" />
                           </a>
                         </Button>
                       )}
-                      {app.googlePlay && (
+                      {app.playStoreUrl && (
                         <Button asChild variant="outline" size="sm" className="flex-1">
-                          <a href={app.googlePlay} target="_blank" rel="noopener noreferrer">
+                          <a href={app.playStoreUrl} target="_blank" rel="noopener noreferrer">
                             Google Play <ExternalLink className="ml-1 h-4 w-4" />
                           </a>
                         </Button>

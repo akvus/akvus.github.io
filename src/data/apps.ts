@@ -1,4 +1,3 @@
-
 export interface AppData {
   id: string;
   title: string;
@@ -10,6 +9,7 @@ export interface AppData {
   appStoreUrl?: string;
   playStoreUrl?: string;
   websiteUrl?: string;
+  year: string;
 }
 
 export const appsData: AppData[] = [
@@ -33,75 +33,107 @@ export const appsData: AppData[] = [
     technologies: ["Flutter", "Dart", "Firebase", "Android", "iOS"],
     appStoreUrl: "https://apps.apple.com/de/app/apoguide-de/id6447188653",
     playStoreUrl: "https://play.google.com/store/apps/details?id=de.gedisa.apo_guide&hl=gsw",
-    websiteUrl: "https://www.apoguide.de/"
+    websiteUrl: "https://www.apoguide.de/",
+    year: "2023"
   },
   {
-    id: "recipe-finder",
-    title: "Culinary Compass",
-    description: "Discover new recipes based on ingredients you already have at home. Culinary Compass helps reduce food waste while expanding your cooking repertoire with dishes from around the world.",
+    id: "apo-portal",
+    title: "ApoPortal",
+    description: "ApoPortal was developed with the aim of enabling pharmacists to communicate securely, efficiently and reliably. At a time when data protection and information security are becoming increasingly important, the ApoPortal app represents a trustworthy solution for authentication in the chat of the GEDISA Pharmacy Portal. With ApoPortal you can use both the secure chat in the GEDISA Pharmacy Portal and mobile in the app, making your digital communication safe and easy.",
     features: [
-      "Ingredient-based recipe search",
-      "Dietary preference filtering",
-      "Step-by-step cooking instructions",
-      "Meal planning calendar",
-      "Shopping list generator",
-      "Recipe saving and favorites"
+      "Secure chat functionality for pharmacists",
+      "2-factor authentication using QR code technology",
+      "Appointment management integration",
+      "Link to GEDISA Pharmacy Portal",
+      "Customizable notification settings",
+      "High security data protection"
+    ],
+    category: "Health",
+    screenshots: [
+      "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&auto=format&fit=crop"
+    ],
+    technologies: ["Flutter", "Dart", "Firebase", "Two-Factor Authentication", "End-to-End Encryption"],
+    appStoreUrl: "https://apps.apple.com/de/app/apoportal/id1510751097",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=de.gedisa.apo_connect",
+    websiteUrl: "https://www.apoguide.de/",
+    year: "2021"
+  },
+  {
+    id: "kitchen-stories",
+    title: "Kitchen Stories",
+    description: "Kitchen Stories is an award-winning cooking app that provides thousands of free recipes, instructional videos, and cooking articles. The app features step-by-step photo instructions, HD recipe videos, and allows users to create their own digital cookbooks. With over 10,000 recipes ranging from quick meals to complex dishes, Kitchen Stories helps users discover new culinary skills and save their favorite recipes.",
+    features: [
+      "Over 10,000 free recipes",
+      "Step-by-step photo instructions",
+      "HD instructional videos",
+      "Create and save personal cookbooks",
+      "Recipe search by difficulty and preparation time",
+      "Measurement converter for serving adjustments",
+      "Premium features with Kitchen Stories Plus"
     ],
     category: "Food & Drink",
     screenshots: [
-      "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460819739742-50e4486578f5?w=800&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&auto=format&fit=crop"
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "Spoonacular API"],
-    appStoreUrl: "https://apps.apple.com",
-    playStoreUrl: "https://play.google.com",
-    websiteUrl: "https://example.com/culinarycompass"
+    technologies: ["React Native", "JavaScript", "AWS", "Content Delivery Networks", "Video Streaming"],
+    appStoreUrl: "https://apps.apple.com/app/kitchen-stories-recipes/id771068291",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.ajnsnewmedia.kitchenstories",
+    websiteUrl: "https://www.kitchenstories.com/",
+    year: "2014"
   },
   {
-    id: "task-manager",
-    title: "TaskFlow",
-    description: "A sleek and intuitive task management app designed to boost productivity and organize your personal and professional life with minimal effort. TaskFlow uses smart prioritization and gentle reminders to keep you on track.",
+    id: "media-markt",
+    title: "MediaMarkt Deutschland",
+    description: "The MediaMarkt Deutschland app gives you the entire range of technology at your fingertips: all products, all services, and all offers. With this app, you can order the latest electronics, track deliveries, access digital receipts, and find the nearest stores. The app also offers exclusive coupons, a rewards program, and rapid delivery options including 90-minute delivery for selected products.",
     features: [
-      "Intuitive drag-and-drop interface",
-      "Smart task prioritization",
-      "Project and list organization",
-      "Time tracking and productivity insights",
-      "Recurring tasks and reminders",
-      "Collaboration and task delegation"
+      "Exclusive app-only coupons and offers",
+      "myMediaMarkt loyalty program with points system",
+      "Express delivery (under 90 minutes) for select products",
+      "Product scanning in-store for detailed information",
+      "Store finder with real-time product availability",
+      "Order tracking and digital receipts",
+      "Digital myMediaMarkt card for in-store benefits"
     ],
-    category: "Productivity",
+    category: "Shopping",
     screenshots: [
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=800&auto=format&fit=crop"
     ],
-    technologies: ["React Native", "Redux", "Node.js", "MongoDB"],
-    appStoreUrl: "https://apps.apple.com",
-    playStoreUrl: "https://play.google.com",
-    websiteUrl: "https://example.com/taskflow"
+    technologies: ["React Native", "Redux", "Node.js", "RESTful APIs", "Payment Gateway Integration"],
+    appStoreUrl: "https://apps.apple.com/de/app/mediamarkt-deutschland/id386304604",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.media.markt",
+    websiteUrl: "https://www.mediamarkt.de/",
+    year: "2019"
   },
   {
-    id: "meditation-app",
-    title: "Serenity",
-    description: "Find peace in your daily life with guided meditations, breathing exercises, and sleep stories. Serenity helps users reduce stress, improve focus, and enhance overall mental wellbeing through mindfulness practices.",
+    id: "saturn",
+    title: "Saturn Deutschland",
+    description: "Shop on the go with the Saturn Deutschland app: Turn your smartphone into a technology hub and always stay up to date with the latest developments. Whether you're looking for a new notebook or household appliance, you can use the free Saturn app to shop for electronics anytime, anywhere. The app features dark mode for eye comfort, express delivery options, and a modern interface with intuitive navigation.",
     features: [
-      "Guided meditations for various needs",
-      "Breathing exercise visualizations",
-      "Sleep stories and ambient sounds",
-      "Mindfulness reminders and quotes",
-      "Meditation progress tracking",
-      "Customizable meditation sessions"
+      "Dark mode for reduced eye strain",
+      "Fast loading and improved performance",
+      "Modern interface with intuitive navigation",
+      "Full-text product search",
+      "Direct access to personal profile and order history",
+      "Saturn CARD integration",
+      "Face ID authentication for secure access",
+      "Multiple payment method options"
     ],
-    category: "Health & Wellness",
+    category: "Shopping",
     screenshots: [
-      "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1528319725582-ddc096101511?w=800&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601972602237-8c79241e781b?w=800&auto=format&fit=crop"
     ],
-    technologies: ["Swift", "SwiftUI", "Core Audio", "CloudKit"],
-    appStoreUrl: "https://apps.apple.com",
-    playStoreUrl: "https://play.google.com",
-    websiteUrl: "https://example.com/serenity"
+    technologies: ["React Native", "Redux", "Node.js", "RESTful APIs", "Biometric Authentication"],
+    appStoreUrl: "https://apps.apple.com/de/app/saturn-deutschland/id557562682",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.media.saturn",
+    websiteUrl: "https://www.saturn.de/",
+    year: "2020"
   }
 ];
