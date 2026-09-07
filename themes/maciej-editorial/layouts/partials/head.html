@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+{{ $description := .Description | default site.Params.description }}
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ .Params.author | default site.Params.author }}">
+<title>{{ if .IsHome }}{{ site.Title }} · {{ site.Params.role }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} · {{ site.Params.role }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{ $cover := .Resources.GetMatch (.Params.cover | default "cover.*") }}
+{{ with $cover }}<meta property="og:image" content="{{ .Permalink }}">{{ else }}<meta property="og:image" content="{{ "og-image.png" | absURL }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = saved || preferred;
+    } catch (_) {}
+  })();
+</script>
+{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+

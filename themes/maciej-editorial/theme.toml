@@ -1,0 +1,8 @@
+name = "Maciej Editorial"
+license = "MIT"
+description = "A custom editorial theme for Maciej Zawieja"
+min_version = "0.165.0"
+
+[author]
+  name = "Maciej Zawieja"
+

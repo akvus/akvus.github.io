@@ -1,0 +1,62 @@
+baseURL: "https://maciejzawieja.dev/"
+locale: "en-US"
+title: "Maciej Zawieja"
+theme: "maciej-editorial"
+enableRobotsTXT: true
+enableGitInfo: false
+
+pagination:
+  pagerSize: 9
+
+taxonomies:
+  category: categories
+  tag: tags
+
+permalinks:
+  posts: "/blog/:slug/"
+  apps: "/apps/:slug/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+
+menus:
+  main:
+    - name: "Writing"
+      pageRef: "/posts"
+      weight: 10
+    - name: "Apps"
+      pageRef: "/apps"
+      weight: 20
+    - name: "Videos"
+      pageRef: "/videos"
+      weight: 30
+    - name: "Contact"
+      pageRef: "/contact"
+      weight: 40
+
+params:
+  description: "Writing and selected work by Maciej Zawieja, a software engineer focused on mobile applications and backend systems."
+  author: "Maciej Zawieja"
+  role: "Lead Software Engineer"
+  location: "Munich, Germany"
+  email: "zawieja.mobile@gmail.com"
+  social:
+    github: "https://github.com/akvus"
+    x: "https://x.com/akvus"
+    linkedin: "https://linkedin.com/in/maczaw/"
+    youtube: "https://www.youtube.com/channel/UCz0IhLYLaiaZ7D9_U301S9Q"

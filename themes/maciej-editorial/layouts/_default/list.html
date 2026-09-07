@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <header class="page-intro shell">
+    <p class="eyebrow">Notes from the work</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <section class="shell section section-first">
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+    <div class="article-grid">
+      {{ range $paginator.Pages }}{{ partial "article-card.html" . }}{{ end }}
+    </div>
+    {{ partial "pagination.html" $paginator }}
+  </section>
+{{ end }}
+

@@ -1,0 +1,13 @@
+{{ $page := .page }}
+{{ $class := .class | default "" }}
+{{ $loading := .loading | default "lazy" }}
+{{ $cover := $page.Resources.GetMatch ($page.Params.cover | default "cover.*") }}
+{{ with $cover }}
+  {{ $small := .Resize "720x webp q82" }}
+  {{ $large := .Resize "1280x webp q84" }}
+  <picture class="{{ $class }}">
+    <source srcset="{{ $small.RelPermalink }} 720w, {{ $large.RelPermalink }} 1280w" sizes="(max-width: 760px) 100vw, 760px" type="image/webp">
+    <img src="{{ $large.RelPermalink }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="" loading="{{ $loading }}" decoding="async">
+  </picture>
+{{ end }}
+

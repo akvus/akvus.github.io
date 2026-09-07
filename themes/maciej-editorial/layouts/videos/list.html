@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <header class="page-intro shell"><p class="eyebrow">Field notes</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+  <section class="shell videos-list">
+    {{ range .Pages }}
+      <article class="video-feature">
+        <a class="video-image" href="{{ .Params.videoUrl }}" target="_blank" rel="noopener"><img src="{{ .Params.thumbnailUrl }}" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></a>
+        <div class="video-copy"><p class="eyebrow">{{ delimit .Params.topics " · " }}</p><h2>{{ .Title }}</h2><p>{{ .Description }}</p><a class="text-link" href="{{ .Params.videoUrl }}" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></div>
+      </article>
+    {{ end }}
+  </section>
+{{ end }}

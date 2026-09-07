@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <header class="page-intro shell"><p class="eyebrow">Selected work</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+  <section class="shell apps-grid">
+    {{ range sort .Pages "Params.year" "desc" }}
+      {{ $app := . }}
+      <article class="app-card">
+        {{ with index .Params.screenshots 0 }}<a class="app-shot" href="{{ $app.RelPermalink }}"><img src="{{ . }}" alt="{{ $app.Title }} app screenshot" loading="lazy" decoding="async"></a>{{ end }}
+        <div class="app-card-copy">
+          <div class="card-meta"><span>{{ .Params.category }}</span><span aria-hidden="true">·</span><span>{{ .Params.year }}</span></div>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Description | truncate 175 }}</p>
+          <div class="tag-row">{{ range first 3 .Params.technologies }}<span>{{ . }}</span>{{ end }}</div>
+        </div>
+      </article>
+    {{ end }}
+  </section>
+{{ end }}

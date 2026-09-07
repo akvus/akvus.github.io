@@ -1,0 +1,36 @@
+{{ define "main" }}
+  {{ if eq .Section "posts" }}
+    <article class="post">
+      <header class="post-header shell shell-reading">
+        <a class="back-link" href="{{ "blog/" | relURL }}">← All writing</a>
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          <span aria-hidden="true">·</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+        <h1>{{ .Title }}</h1>
+        <p class="post-deck">{{ .Description }}</p>
+        <div class="tag-row post-tags">
+          {{ range .Params.categories }}<a href="{{ printf "/categories/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+        </div>
+      </header>
+      <div class="shell shell-wide post-cover-wrap">
+        {{ partial "cover.html" (dict "page" . "class" "post-cover" "loading" "eager") }}
+      </div>
+      <div class="shell shell-reading post-layout">
+        <aside class="post-rail"><span>Written by</span><strong>{{ .Params.author | default site.Params.author }}</strong></aside>
+        <div class="prose">{{ .Content }}</div>
+      </div>
+      <nav class="shell shell-reading post-nav" aria-label="Adjacent articles">
+        {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Previous</span><strong>← {{ .Title }}</strong></a>{{ else }}<span></span>{{ end }}
+        {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span>Next</span><strong>{{ .Title }} →</strong></a>{{ else }}<span></span>{{ end }}
+      </nav>
+    </article>
+  {{ else }}
+    <article class="page-intro shell shell-reading generic-page">
+      <h1>{{ .Title }}</h1>
+      <div class="prose">{{ .Content }}</div>
+    </article>
+  {{ end }}
+{{ end }}
+

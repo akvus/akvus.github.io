@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <header class="page-intro shell"><p class="eyebrow">Filed under</p><h1>{{ .Title }}</h1><p>{{ len .Pages }} articles</p></header>
+  <section class="shell section section-first"><div class="article-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "article-card.html" . }}{{ end }}</div></section>
+{{ end }}
+

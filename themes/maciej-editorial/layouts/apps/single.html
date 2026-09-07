@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <article class="app-detail shell">
+    <a class="back-link" href="{{ "apps/" | relURL }}">← All apps</a>
+    <header class="app-detail-header">
+      <div>
+        <div class="card-meta"><span>{{ .Params.category }}</span><span aria-hidden="true">·</span><span>{{ .Params.year }}</span></div>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+        <div class="app-actions">
+          {{ with .Params.appStoreUrl }}<a class="button button-primary" href="{{ . }}" target="_blank" rel="noopener">App Store ↗</a>{{ end }}
+          {{ with .Params.playStoreUrl }}<a class="button button-quiet" href="{{ . }}" target="_blank" rel="noopener">Google Play ↗</a>{{ end }}
+          {{ with .Params.websiteUrl }}<a class="text-link" href="{{ . }}" target="_blank" rel="noopener">Website ↗</a>{{ end }}
+        </div>
+      </div>
+      <aside class="app-facts">
+        <p class="footer-label">Technology</p>
+        <div class="tag-row">{{ range .Params.technologies }}<span>{{ . }}</span>{{ end }}</div>
+        <p class="footer-label">Selected capabilities</p>
+        <ul>{{ range .Params.features }}<li>{{ . }}</li>{{ end }}</ul>
+      </aside>
+    </header>
+    <section class="app-gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">Inside the product</p><h2 id="gallery-title">Screenshots</h2></div></div>
+      <div class="screenshots">{{ range .Params.screenshots }}<img src="{{ . }}" alt="{{ $.Title }} app screenshot" loading="lazy" decoding="async">{{ end }}</div>
+    </section>
+  </article>
+{{ end }}
+

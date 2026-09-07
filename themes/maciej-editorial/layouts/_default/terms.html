@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <header class="page-intro shell"><p class="eyebrow">Browse the archive</p><h1>{{ .Title }}</h1></header>
+  <section class="shell term-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><strong>{{ .Count }}</strong></a>
+    {{ end }}
+  </section>
+{{ end }}
+
