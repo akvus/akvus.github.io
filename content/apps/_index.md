@@ -1,5 +1,4 @@
 ---
 title: "Apps"
-description: "Selected mobile products I have helped bring to life across healthcare, food, and retail."
+description: "Selected digital products I have helped bring to life across education, healthcare, food, and retail."
 ---
-
