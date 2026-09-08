@@ -60,6 +60,7 @@ for (const app of readExport("apps.ts", "appsData")) {
   writePageBundle("apps", app.id, [
     ["title", app.title],
     ["slug", app.id],
+    ["date", `${app.year}-01-01T00:00:00Z`],
     ["description", app.description],
     ["year", app.year],
     ["category", app.category],
@@ -73,10 +74,15 @@ for (const app of readExport("apps.ts", "appsData")) {
   ], app.description);
 }
 
+const legacyVideoDates = {
+  "patrick-guide-masoala": "2025-03-10T23:03:52Z",
+};
+
 for (const video of readExport("videos.ts", "videosData")) {
   writePageBundle("videos", video.id, [
     ["title", video.title],
     ["slug", video.id],
+    ["date", legacyVideoDates[video.id]],
     ["description", video.description],
     ["videoUrl", video.videoUrl],
     ["thumbnailUrl", video.thumbnailUrl],

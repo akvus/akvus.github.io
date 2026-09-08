@@ -1,6 +1,7 @@
 ---
 title: "ApoGuide"
 slug: "apo-guide"
+date: "2023-01-01T00:00:00Z"
 description: "ApoGuide – direct contact with your favorite pharmacy! Send prescriptions, order medications, and receive medical advice via the app from your local pharmacy. With the ApoGuide app, you're connected to your local pharmacy around the clock. Save yourself the hassle of double-traveling and unnecessary wait times – try it now. In addition to the convenient pharmacy search, the app offers the option of sending e-prescriptions from your electronic health card or booking appointments at your pharmacy. With the online shop function, you can order over-the-counter medications from your pharmacy at any time. The highly secure chat function enables you to communicate quickly and securely with your local pharmacy – whether you have questions about medication availability or dosage instructions, your pharmacy is always there for you, even on your mobile. The ApoGuide app is the digital branch of your local pharmacy. See for yourself!"
 year: "2023"
 category: "Health"

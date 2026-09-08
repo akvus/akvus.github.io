@@ -1,6 +1,7 @@
 ---
 title: "Meet PATRICK - A guide in Masoala National Park, Madagascar"
 slug: "patrick-guide-masoala"
+date: "2025-03-10T23:03:52Z"
 description: "In this interview, we sit down with Patrick, a seasoned guide in Masoala National Park, Madagascar. He shares his personal experiences, insights on the park's biodiversity, and the challenges of protecting this vital rainforest. Learn about his deep connection to the land and his passion for sharing its wonders with visitors."
 videoUrl: "https://www.youtube.com/watch?v=9VqBNUQ72qc"
 thumbnailUrl: "https://i3.ytimg.com/vi/9VqBNUQ72qc/maxresdefault.jpg"

@@ -39,15 +39,18 @@ menus:
     - name: "Writing"
       pageRef: "/posts"
       weight: 10
+    - name: "Timeline"
+      pageRef: "/timeline"
+      weight: 20
     - name: "Apps"
       pageRef: "/apps"
-      weight: 20
+      weight: 30
     - name: "Videos"
       pageRef: "/videos"
-      weight: 30
+      weight: 40
     - name: "Contact"
       pageRef: "/contact"
-      weight: 40
+      weight: 50
 
 params:
   description: "Writing and selected work by Maciej Zawieja, a software engineer focused on mobile applications and backend systems."

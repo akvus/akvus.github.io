@@ -1,6 +1,7 @@
 ---
 title: "MediaMarkt Deutschland"
 slug: "media-markt"
+date: "2019-01-01T00:00:00Z"
 description: "The MediaMarkt Deutschland app gives you the entire range of technology at your fingertips: all products, all services, and all offers. With this app, you can order the latest electronics, track deliveries, access digital receipts, and find the nearest stores. The app also offers exclusive coupons, a rewards program, and rapid delivery options including 90-minute delivery for selected products."
 year: "2019"
 category: "Shopping"

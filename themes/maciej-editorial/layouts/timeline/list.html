@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <header class="page-intro shell">
+    <p class="eyebrow"></p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <section class="shell timeline-section">
+    <ol class="timeline-list">
+      {{ $timelineSections := slice "posts" "apps" "videos" }}
+      {{ range (where site.RegularPages "Section" "in" $timelineSections).ByDate.Reverse }}
+        <li class="timeline-entry">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ if eq .Section "apps" }}{{ .Params.year }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</time>
+          <div class="timeline-entry-copy">
+            <h2>
+              {{ if eq .Section "videos" }}
+                <a href="{{ .Params.videoUrl }}" target="_blank" rel="noopener">{{ .Title }} <span aria-hidden="true">↗</span></a>
+              {{ else }}
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ end }}
+            </h2>
+            <p>{{ .Plain | htmlUnescape | truncate 160 }}</p>
+          </div>
+        </li>
+      {{ end }}
+    </ol>
+  </section>
+{{ end }}

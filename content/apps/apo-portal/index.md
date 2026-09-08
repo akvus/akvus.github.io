@@ -1,6 +1,7 @@
 ---
 title: "ApoPortal"
 slug: "apo-portal"
+date: "2021-01-01T00:00:00Z"
 description: "ApoPortal was developed with the aim of enabling pharmacists to communicate securely, efficiently and reliably. At a time when data protection and information security are becoming increasingly important, the ApoPortal app represents a trustworthy solution for authentication in the chat of the GEDISA Pharmacy Portal. With ApoPortal you can use both the secure chat in the GEDISA Pharmacy Portal and mobile in the app, making your digital communication safe and easy."
 year: "2021"
 category: "Health"

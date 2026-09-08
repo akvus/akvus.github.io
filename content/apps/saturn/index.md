@@ -1,6 +1,7 @@
 ---
 title: "Saturn Deutschland"
 slug: "saturn"
+date: "2020-01-01T00:00:00Z"
 description: "Shop on the go with the Saturn Deutschland app: Turn your smartphone into a technology hub and always stay up to date with the latest developments. Whether you're looking for a new notebook or household appliance, you can use the free Saturn app to shop for electronics anytime, anywhere. The app features dark mode for eye comfort, express delivery options, and a modern interface with intuitive navigation."
 year: "2020"
 category: "Shopping"

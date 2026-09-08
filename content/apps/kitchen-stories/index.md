@@ -1,6 +1,7 @@
 ---
 title: "Kitchen Stories"
 slug: "kitchen-stories"
+date: "2014-01-01T00:00:00Z"
 description: "Kitchen Stories is an award-winning cooking app that provides thousands of free recipes, instructional videos, and cooking articles. The app features step-by-step photo instructions, HD recipe videos, and allows users to create their own digital cookbooks. With over 10,000 recipes ranging from quick meals to complex dishes, Kitchen Stories helps users discover new culinary skills and save their favorite recipes."
 year: "2014"
 category: "Food & Drink"
