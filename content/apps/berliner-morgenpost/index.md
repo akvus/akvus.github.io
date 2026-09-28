@@ -2,6 +2,7 @@
 title: "Berliner Morgenpost & FUNKE News Apps"
 slug: "berliner-morgenpost"
 weight: 1
+year: "2026"
 description: "I designed the shared Flutter architecture that replaced FUNKE MEDIENGRUPPE’s legacy news apps, including Berliner Morgenpost, Hamburger Abendblatt, and WAZ. Built on a common codebase, the new apps support multiple regional news brands. I coached the team of web developers in Flutter and mobile development, enabling them to take ownership of the codebase and its ongoing development."
 category: "News & Media"
 technologies: ["Flutter", "Dart", "Mobile Architecture"]
