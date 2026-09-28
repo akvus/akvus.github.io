@@ -30,7 +30,7 @@ hugo new content posts/my-article/index.md
 
 Article front matter supports `title`, `date`, `description`, `author`, `categories`, `tags`, `cover`, and `draft`. Put the referenced cover file next to `index.md`.
 
-App pages additionally support `year`, `category`, `technologies`, `features`, `screenshots`, `appStoreUrl`, `playStoreUrl`, and `websiteUrl`.
+App pages additionally support `year`, `category`, `technologies`, `features`, `screenshots`, `appStoreUrl`, `playStoreUrl`, `developerStoreUrl`, and `websiteUrl`.
 
 ## Build and deploy
 

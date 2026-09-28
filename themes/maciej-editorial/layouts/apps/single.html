@@ -3,12 +3,13 @@
     <a class="back-link" href="{{ "apps/" | relURL }}">← All apps</a>
     <header class="app-detail-header">
       <div>
-        <div class="card-meta"><span>{{ .Params.category }}</span><span aria-hidden="true">·</span><span>{{ .Params.year }}</span></div>
+        <div class="card-meta"><span>{{ .Params.category }}</span>{{ with .Params.year }}<span aria-hidden="true">·</span><span>{{ . }}</span>{{ end }}</div>
         <h1>{{ .Title }}</h1>
         <p>{{ .Description }}</p>
         <div class="app-actions">
           {{ with .Params.appStoreUrl }}<a class="button button-primary" href="{{ . }}" target="_blank" rel="noopener">App Store ↗</a>{{ end }}
           {{ with .Params.playStoreUrl }}<a class="button button-quiet" href="{{ . }}" target="_blank" rel="noopener">Google Play ↗</a>{{ end }}
+          {{ with .Params.developerStoreUrl }}<a class="text-link" href="{{ . }}" target="_blank" rel="noopener">More apps from the publisher ↗</a>{{ end }}
           {{ with .Params.websiteUrl }}<a class="text-link" href="{{ . }}" target="_blank" rel="noopener">Website ↗</a>{{ end }}
         </div>
       </div>
@@ -25,4 +26,3 @@
     </section>
   </article>
 {{ end }}
-
